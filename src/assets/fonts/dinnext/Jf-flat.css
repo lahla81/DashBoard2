@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'DIN Alternate Bold';
+    src: url('din-alternate-bold.ttf')  format('truetype'),
+    url('DIN-Alternate-Bold.otf')  ;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JF-Flat-regular';
+    src: url('JF-Flat-regular.eot') format('embedded-opentype'),
+    url('JF-Flat-regular.woff') format('woff'),
+    url('JF-Flat-regular.ttf')  format('truetype'),
+    url('JF-Flat-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansPro Regular';
+    src: url('SourceSansPro-Regular.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansPro SemiBold';
+    src: url('SourceSansPro-SemiBold.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansPro Bold';
+    src: url('SourceSansPro-Bold.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansPro Black';
+    src: url('SourceSansPro-Black.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansPro Light';
+    src:url('SourceSansPro-Light.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lubalingraphitcturner-boldarabic';
+    src:url('lubalingraphitcturner-boldarabic.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

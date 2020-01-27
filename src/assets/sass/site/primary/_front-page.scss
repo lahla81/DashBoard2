@@ -1,0 +1,138 @@
+.row{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.main-page{
+  min-height: 100vh;
+  transition: all 0.6s;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+   
+
+.main-body{
+  background: $primary;
+  background-image: url(../img/01/Group-4.png),
+                    linear-gradient(-135deg, $primary 10%, $secondary 90%);
+  background-position: center center, center center;
+  background-size: cover , cover;
+  background-repeat: no-repeat, no-repeat;
+  min-height: 100vh;
+}
+.main-sidebar{
+  min-width: 522px;
+  max-width: 522px;
+  min-height: 100vh;
+  transition: all 0.6s;
+  @media (max-width: 992px) {
+    min-width: 270px;
+    max-width: 270px;
+  }
+}
+#main_sidbar.active {
+  margin-right: -522px;
+  @media (max-width: 992px) {
+    margin-right: -270px;
+  }
+}
+.login-head{
+  font-size: 24px;
+  margin-top: 120px;
+}
+.login-form{
+  margin-top: 120px;
+  input{
+    border-bottom: 2px solid #E9E9F0 !important;
+    font-size: 15px;
+  }
+  input::placeholder{
+    color: #43425D !important;
+    font-size: 15px;
+  }
+}
+.checkbox{
+  margin-top: 64px !important;
+  font-size: 12px;
+  .custom-control-label{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.custom-control-label:before{
+  display: none;
+}
+
+/* Hide the browser's default checkbox */
+input.custom-control-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  height: 13px;
+  width: 13px;
+  border-radius: 4px;
+  border: 1px solid #808495;
+  background-color: #fff;
+}
+
+
+/* On mouse-over, add a grey background color */
+.custom-control-label:hover input ~ .checkmark {
+  background-color: $white;
+  border: 3px solid $primary;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-control-label input:checked ~ .checkmark {
+  background-color: $primary;
+  border: 3px solid $primary;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-control-label input:checked ~ .checkmark:after {
+  display: block;
+}
+.log-button{
+  margin-top: 78px !important;
+  
+  .login-btn{
+    height: 56px;
+    width: 142px;
+    font-size: 12px !important;
+    border: none;
+    box-shadow: 0 3px 6px 0 $primary;
+  }
+  .register-link{
+    font-size: 12px !important;
+    line-height: 42px;
+    height: 56px;
+    width: 142px;
+    color: #4D4F5C;
+    border: 1px solid #43425D;
+  }
+}
+.zaid-img{
+  margin-top: 60px;
+}
+

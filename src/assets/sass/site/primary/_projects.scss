@@ -1,0 +1,1137 @@
+// project page style
+
+.font-bold{
+    font-weight: bold;
+}
+#content {
+    width: calc(100% - 308px);
+    margin-right: 308px;
+    transition: 0.6s all ease-in-out;
+}
+#content.active {
+    margin-right: 0px;
+    width: 100%;
+}
+
+canvas#bar-chart{
+    max-width: 98%;
+}
+
+//header navbar
+header.site-header{
+    box-shadow: 0 2px 6px 0 rgba($color: #000000, $alpha: .04);
+    .nav-user-name{
+        font-size: 13px;
+        border-right: 1px solid #EBEBF2;
+        color: #4D4F5C;
+    }
+    .nav-massage{
+        color: #BCBCCB;
+    }
+    .nav-notification{
+        position: relative;
+        color: #BCBCCB;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #FF6A6A;
+            left: 12px;
+            top: 7px;
+            border: 2px solid $white;
+            @media(max-width: 1200px){
+            left: 4px;
+            }
+        }
+    }
+}
+
+.content-header{
+    .overlay{
+      border-radius: 14px;
+      box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .16);
+      padding: 4px;
+    }
+}
+.content-left{
+    .overlay{
+        padding: 10px;
+        border-radius: 11px;
+        box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .16);   
+    }
+    .period-btn{
+        font-size: 18px;
+        border-radius: 27px;
+        line-height: 40px;
+    }
+}
+.content-title{
+    h3{
+        font-family: 'lubalingraphitcturner-boldarabic','JF-Flat-regular';
+        font-size: 30px;
+        line-height: 50px;
+        // margin-bottom: 70px;
+        margin-top: 30px;
+    }
+}
+.content_img{
+    align-items: center;
+    height: 75vh;
+}
+.checkbox-main{
+    margin-right: 75px;
+    .custom-control-label{
+        font-family: 'lubalingraphitcturner-boldarabic','JF-Flat-regular';
+        font-size: 25px;
+        color: #FF6A6A;
+        line-height: 33px;
+        position: relative;
+        display: block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .custom-control-label-notary{
+        font-family: 'JF-Flat-regular';
+        font-size: 18px;
+        color: #4D4F5C;
+        line-height: 31px;
+        margin-top: 35px;
+    }
+  }
+  
+  /* Create a custom checkbox */
+.checkmark-main {
+    position: absolute;
+    top: 3px;
+    right: -40px;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    border: 3px solid rgba($color: #000000, $alpha: .15);
+    background-color: #fff;
+}
+  
+  
+  /* On mouse-over, add a grey background color */
+.custom-control-label:hover input ~ .checkmark-main {
+    background-color: $white;
+    border: 3px solid $primary;
+}
+  
+  /* When the checkbox is checked, add a blue background */
+.custom-control-label input:checked ~ .checkmark-main {
+    border: 3px solid $primary;
+}
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-main:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the checkmark when checked */
+.custom-control-label input:checked ~ .checkmark-main:after {
+    display: block;
+}
+  /* Style the checkmark/indicator */
+.custom-control-label .checkmark-main:after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #00BA81;
+}
+  
+.content-text{
+    margin-right: 35px;
+    h4{
+      font-family: 'lubalingraphitcturner-boldarabic','JF-Flat-regular';
+      font-size: 20px;
+      line-height: 45px;
+      margin-bottom: 40px;
+      margin-top: 10px;
+      color: #4D4F5C;
+    }
+}
+.content-left{
+    .overlay{
+      p{
+        font-size: 18px;
+        margin: 20px 8px 40px 0;
+      }
+    }
+}
+.checkbox-small{
+    .custom-control-label{
+        position: relative;
+        display: block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
+  
+  /* Create a custom checkbox */
+.checkmark-small {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    opacity: 0.2;
+    height: 19px;
+    width: 19px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: .49);
+    background-color: #3B86FF;
+}
+  
+  /* On mouse-over, add a grey background color */
+.label-sm:hover input ~ .checkmark-small {
+    background-color: $white;
+    opacity: 1;
+}
+  
+/* When the checkbox is checked, add a blue background */
+.label-sm input:checked ~ .checkmark-small {
+    background: $white;
+    opacity: 1;
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-small:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.label-sm input:checked ~ .checkmark-small:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.label-sm .checkmark-small:after {
+    right: 6.5px;
+    top: 5px;
+    width: 6px;
+    height: 8px;
+    border: solid $black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.label-sm{
+    height: 130px;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: 0.2s all;
+    box-shadow: 4px 4px 6px rgba($color: #000000, $alpha: .35);
+    &:hover{
+        box-shadow: 4px 4px 6px $primary;
+    }
+}
+.label-half{
+    background-image: url(../img/charts/half-light.png);
+    &:hover{
+        background-image: url(../img/charts/half-dark.png); 
+    }
+}
+.label-bar{
+    background-image: url(../img/charts/bar-light.png);
+    &:hover{
+        background-image: url(../img/charts/bar-dark.png); 
+    }
+}
+.label-line{
+    background-image: url(../img/charts/line-light.png);
+    &:hover{
+        background-image: url(../img/charts/line-dark.png); 
+    }
+}
+.label-circle{
+    background-image: url(../img/charts/circle-light.png);
+    &:hover{
+        background-image: url(../img/charts/circle-dark.png); 
+    }
+}
+
+/* When the checkbox is checked, add a blue background */
+input#customCheck-bar:checked ~ #label-bar {
+    background-image: url(../img/charts/bar-dark.png); 
+}
+
+.checkbox-small.checked-bar{
+    .label-bar{
+        background-image: url(../img/charts/bar-dark.png);
+        box-shadow: 4px 4px 6px $primary;
+    }
+}
+.checkbox-small.checked-line{
+    .label-line{
+        background-image: url(../img/charts/line-dark.png);
+        box-shadow: 4px 4px 6px $primary;
+    }
+}
+.checkbox-small.checked-half{
+    .label-half{
+        background-image: url(../img/charts/half-dark.png);
+        box-shadow: 4px 4px 6px $primary;
+    }
+}
+.checkbox-small.checked-circle{
+    .label-circle{
+        background-image: url(../img/charts/circle-dark.png);
+        box-shadow: 4px 4px 6px $primary;
+    }
+}
+  
+.card{
+    border: none;
+    border-radius: 10px;
+    transition: 0.5 all;
+}
+.card-header{
+    border-radius: 10px 10px 0 0 !important;
+    font-size: 20px;
+    color: $white;
+    transition: 0.5 all;
+}
+.notaries-half-chart-col,
+.notaries-circle-chart-col{
+    .card-header{
+        font-size: 14px;
+    }
+    .col-12{
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
+        @media(max-width: 1432px){
+            flex: 0 0 25% !important;
+            max-width: 25% !important;   
+        }
+        @media(max-width: 1210px){
+            flex: 0 0 33.33% !important;
+            max-width: 33.33% !important;   
+        }
+        @media(max-width: 690px){
+            flex: 0 0 50% !important;
+            max-width: 50% !important;   
+        }
+        @media(max-width: 472px){
+            flex: 0 0 100% !important;
+            max-width: 100% !important;   
+        }
+    }
+}
+.box-danger{
+    box-shadow: 0 3px 20px $danger;
+    .checkmark-trans:after{
+        background-color: $danger;
+    }
+}
+.box-teal{
+    box-shadow: 0 3px 20px $teal;
+    .checkmark-trans:after{
+        background-color: $teal;
+    }
+}
+.box-cyan{
+    box-shadow: 0 3px 20px $cyan;
+    .checkmark-trans:after{
+        background-color: $cyan;
+    }
+}
+.box-warning{
+    box-shadow: 0 3px 20px $warning;
+    .checkmark-trans:after{
+        background-color: $warning;
+    }
+}
+.box-purple{
+    box-shadow: 0 3px 20px $purple;
+    .checkmark-trans:after{
+        background-color: $purple;
+    }
+}
+.box-rose{
+    box-shadow: 0 3px 20px $rose;
+    .checkmark-trans:after{
+        background-color: $rose;
+    }
+}
+.box-light-red{
+    box-shadow: 0 3px 20px $light-red;
+    .checkmark-trans:after{
+        background-color: $light-red;
+    }
+}
+.box-dark-red{
+    box-shadow: 0 3px 20px $dark-red;
+    .checkmark-trans:after{
+        background-color: $dark-red;
+    }
+}
+.box-dark-green{
+    box-shadow: 0 3px 20px $dark-green;
+    .checkmark-trans:after{
+        background-color: $dark-green;
+    }
+}
+.box-maron{
+    box-shadow: 0 3px 20px $maron;
+    .checkmark-trans:after{
+        background-color: $maron;
+    }
+}
+.box-rody{
+    box-shadow: 0 3px 20px $rody;
+    .checkmark-trans:after{
+        background-color: $rody;
+    }
+}
+.box-maroon{
+    box-shadow: 0 3px 20px $maroon;
+    .checkmark-trans:after{
+        background-color: $maroon;
+    }
+}
+.box-indigo{
+    box-shadow: 0 3px 20px $indigo;
+    .checkmark-trans:after{
+        background-color: $indigo;
+    }
+}
+.card-title{
+    font-size: 20px;
+    border-top: 1px solid rgba($color: #000000, $alpha: .15);
+}
+.card-danger{
+    box-shadow: 0 3px 20px $danger;
+    .card-header,img{
+         box-shadow: 0 3px 6px $danger;
+    }
+    .card-title{
+        color: $danger;
+    }
+}
+.card-teal{
+    box-shadow: 0 3px 20px $teal;
+    .card-header,img{
+        box-shadow: 0 3px 6px $teal;
+    }
+    .card-title{
+        color: $teal;
+    }
+    .trans-row{
+        &:after{
+            background: $teal;
+        }
+    }
+}
+.card-cyan{
+    box-shadow: 0 3px 20px $cyan;
+    .card-header,img{
+        box-shadow: 0 3px 6px $cyan;
+    }
+    .card-title{
+      color: $cyan;
+    }
+    .trans-row{
+        &:after{
+            background: $cyan;
+        }
+    }
+}
+.card-warning{
+    box-shadow: 0 3px 20px $warning;
+    .card-header,img{
+        box-shadow: 0 3px 6px $warning;
+    }
+    .card-title{
+        color: $warning;
+    }
+    .trans-row{
+        &:after{
+            background: $warning;
+        }
+    }
+}
+.card-purple{
+    box-shadow: 0 3px 20px $purple;
+    .card-header{
+        box-shadow: 0 3px 6px $purple;
+    }
+    .card-title{
+        color: $purple;
+    }
+    .trans-row{
+        &:after{
+            background: $purple;
+        }
+    }
+}
+.card-rose{
+    box-shadow: 0 3px 20px $rose;
+    .card-header{
+        box-shadow: 0 3px 6px $rose;
+    }
+    .card-title{
+        color: $rose;
+    }
+    .trans-row{
+        &:after{
+            background: $rose;
+        }
+    }
+}
+.card-light-red{
+    box-shadow: 0 3px 20px $light-red;
+    .card-header{
+        box-shadow: 0 3px 6px $light-red;
+    }
+    .card-title{
+        color: $light-red;
+    }
+    .trans-row{
+        &:after{
+            background: $light-red;
+        }
+    }
+}
+.card-dark-red{
+    box-shadow: 0 3px 20px $dark-red;
+    .card-header{
+        box-shadow: 0 3px 6px $dark-red;
+    }
+    .card-title{
+        color: $dark-red;
+    }
+    .trans-row{
+        &:after{
+            background: $dark-red;
+        }
+    }
+}
+.card-indigo{
+    box-shadow: 0 3px 20px $indigo;
+    .card-header{
+        box-shadow: 0 3px 6px $indigo;
+    }
+    .card-title{
+        color: $indigo;
+    }
+    .trans-row{
+        &:after{
+            background: $indigo;
+        }
+    }
+}
+.card-dark-green{
+    box-shadow: 0 3px 20px $dark-green;
+    .card-header{
+        box-shadow: 0 3px 6px $dark-green;
+    }
+    .card-title{
+        color: $dark-green;
+    }
+    .trans-row{
+        &:after{
+            background: $dark-green;
+        }
+    }
+}
+.card-maron{
+    box-shadow: 0 3px 20px $maron;
+    .card-header{
+        box-shadow: 0 3px 6px $maron;
+    }
+    .card-title{
+        color: $maron;
+    }
+    .trans-row{
+        &:after{
+            background: $maron;
+        }
+    }
+}
+.card-rody{
+    box-shadow: 0 3px 20px $rody;
+    .card-header{
+        box-shadow: 0 3px 6px $rody;
+    }
+    .card-title{
+        color: $rody;
+    }
+    .trans-row{
+        &:after{
+            background: $rody;
+        }
+    }
+}
+.card-maroon{
+    box-shadow: 0 3px 20px $maroon;
+    .card-header{
+        box-shadow: 0 3px 6px $maroon;
+    }
+    .card-title{
+        color: $maroon;
+    }
+    .trans-row{
+        &:after{
+            background: $maroon;
+        }
+    }
+}
+.bar-chart-col,
+.line-chart-col,
+.bar_line_chart_col{
+    margin-top: 32px;
+    width: 99%;
+}
+// .circle-chart-col,
+// .half-chart-col{
+//     transform: scale(0);
+//     transition: transform .4s cubic-bezier(.5,0,.3,1);
+// }
+.chart-small{
+    box-shadow: 3px 3px 20px $purple;
+    border-radius: 14px;
+} 
+.line-chart-col{
+    transform: scale(0);
+    transition: transform .4s cubic-bezier(.5,0,.3,1);
+}
+.chart-row{
+    transition: 1s all ease-in;
+}
+.chart-row.lineChart,.chart-row.barChart{
+    .bar_line_chart_col{
+        display: block !important;
+        transform: scale(1);
+    }
+    .circle-chart-col{
+        transform: scale(0);
+        transition: transform .4s cubic-bezier(.5,0,.3,1);
+        display: none;
+    }
+    .half-chart-col{
+        transform: scale(0);
+        transition: transform .4s cubic-bezier(.5,0,.3,1);
+        display: none;
+    }
+}
+  
+.chart-row.circleChart{
+    .bar_line_chart_col{
+        display: none;
+    }
+    .circle-chart-col{
+        display: block !important;
+        transform: scale(1);
+    }
+    .half-chart-col{
+        display: none;
+    }
+}
+  
+.chart-row.halfChart{
+    .bar_line_chart_col{
+        transform: scale(0);
+        transition: transform .4s cubic-bezier(.5,0,.3,1);
+        display: none;
+    }
+    .circle-chart-col{
+        transform: scale(0);
+        transition: transform .4s cubic-bezier(.5,0,.3,1);
+        display: none;
+    }
+    .half-chart-col{
+        display: block !important;
+        transform: scale(1);
+    }
+}
+
+.circle-chart-col{
+    .card-body{
+        position: relative;
+        span{
+            font-family: 'SourceSansPro Bold';
+            font-size: 39px;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%,-50%);
+        }
+    }
+}
+.transaction,
+.employStat,
+.elecStat,    
+.employLate,
+.transactionTypes,
+.digital_platform,
+.digital_platform_eye{
+    transition: 0.5s all ease-in;
+}
+  
+.chart-row.transaction{
+    .transaction{
+        display: block !important;
+        opacity: 1;
+    }
+    .employStat{
+        display: none;
+        opacity: 0;
+    }
+    .elecStat{
+        display: none;
+        opacity: 0;
+    }
+    .employLate{
+        display: none;
+        opacity: 0;
+    }
+    .transactionTypes{
+        display: none;
+        opacity: 0;
+    }
+    .employeTransactionTypes{
+        display: none;
+        opacity: 0;
+    }
+    .digital_platform{
+        display: none;
+        opacity: 0;
+    }
+    .digital_platform_eye{
+        display: none; 
+        opacity: 0;
+    }
+}
+
+.chart-row.employStat{
+    .transaction{
+        display:none;
+        opacity: 0;
+    }
+    .employStat{
+        display: block !important;
+        opacity: 1;
+    }
+    .elecStat{
+        display: none;
+        opacity: 0;
+    }
+    .employLate{
+        display: none;
+        opacity: 0;
+    }
+    .transactionTypes{
+        display: none;
+        opacity: 0;
+    }
+    .employeTransactionTypes{
+        display: none;
+        opacity: 0;
+    }
+    .digital_platform{
+        display: none;
+        opacity: 0;
+    }
+    .digital_platform_eye{
+        display: none; 
+        opacity: 0;
+    }
+}
+
+.chart-row.elecStat{
+    .transaction{
+        display:none;
+        opacity: 0;
+    }
+    .employStat{
+        display: none;
+        opacity: 0;
+    }
+    .elecStat{
+        display: block !important;
+        opacity: 1;
+    }
+    .employLate{
+        display: none;
+        opacity: 0;
+    }
+    .transactionTypes{
+        display: none;
+        opacity: 0;
+    }
+    .employeTransactionTypes{
+        display: none;
+        opacity: 0;
+    }
+    .digital_platform{
+        display: none;
+        opacity: 0;
+    }
+    .digital_platform_eye{
+        display: none; 
+        opacity: 0;
+    }
+}
+
+.chart-row.employLate{
+    .transaction{
+        display:none;
+        opacity: 0;
+    }
+    .employStat{
+        display: none;
+        opacity: 0;
+    }
+    .elecStat{
+        display: none; 
+        opacity: 0;
+    }
+    .employLate{
+        display: block !important;
+        opacity: 1;
+    }
+    .transactionTypes{
+        display: none;
+        opacity: 0;
+    }
+    .employeTransactionTypes{
+        display: none;
+        opacity: 0;
+    }
+    .digital_platform{
+        display: none;
+        opacity: 0;
+    }
+    .digital_platform_eye{
+        display: none; 
+        opacity: 0;
+    }
+}
+
+.chart-row.transactionTypes{
+    .transaction{
+        display:none;
+        opacity: 0;
+    }
+    .employStat{
+        display: none;
+        opacity: 0;
+    }
+    .elecStat{
+        display: none; 
+        opacity: 0;
+    }
+    .employLate{
+        display: none;
+        opacity: 0;
+    }
+    .transactionTypes{
+        display: block !important;
+        opacity: 1;
+    }
+    .employeTransactionTypes{
+        display: none;
+        opacity: 0;
+    }
+    .digital_platform{
+        display: none;
+        opacity: 0;
+    }
+    .digital_platform_eye{
+        display: none; 
+        opacity: 0;
+    }
+}
+
+.chart-row.employeTransactionTypes{
+    .transaction{
+        display:none;
+        opacity: 0;
+    }
+    .employStat{
+        display: none;
+        opacity: 0;
+    }
+    .elecStat{
+        display: none; 
+        opacity: 0;
+    }
+    .employLate{
+        display: none;
+        opacity: 0;
+    }
+    .transactionTypes{
+        display: none; 
+        opacity: 0;
+    }
+    .employeTransactionTypes{
+        display: block !important;
+        opacity: 1;
+    }
+    .digital_platform{
+        display: none;
+        opacity: 0;
+    }
+    .digital_platform_eye{
+        display: none; 
+        opacity: 0;
+    }
+}
+.chart-row.digital_platform{
+    .transaction{
+        display:none;
+        opacity: 0;
+    }
+    .employStat{
+        display: none;
+        opacity: 0;
+    }
+    .elecStat{
+        display: none; 
+        opacity: 0;
+    }
+    .employLate{
+        display: none;
+        opacity: 0;
+    }
+    .transactionTypes{
+        display: none; 
+        opacity: 0;
+    }
+    .employeTransactionTypes{
+        display: none;
+        opacity: 0;
+    }
+    .digital_platform{
+        display: block !important;
+        opacity: 1;
+    }
+    .digital_platform_eye{
+        display: none; 
+        opacity: 0;
+    }
+}
+
+.chart-row.digital_platform_eye{
+    .transaction{
+        display:none;
+        opacity: 0;
+    }
+    .employStat{
+        display: none;
+        opacity: 0;
+    }
+    .elecStat{
+        display: none;
+        opacity: 0; 
+    }
+    .employLate{
+        display: none;
+        opacity: 0;
+    }
+    .transactionTypes{
+        display: none; 
+        opacity: 0;
+    }
+    .employeTransactionTypes{
+        display: none; 
+        opacity: 0;
+    }
+    .digital_platform{
+        display: none; 
+        opacity: 0;
+    }
+    .digital_platform_eye{
+        display: block !important;
+        opacity: 1;
+    }
+}
+#employlate{
+    position: relative;
+    span{
+        font-family: 'SourceSansPro Bold';
+        font-size: 39px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+    }
+}
+
+.translater{
+    transition: 0.3 all;
+    -webkit-transition: 0.3 all;
+    -moz-transition: 0.3 all;
+    -o-transition: 0.3 all;
+}
+.trans-row{
+    cursor: pointer;
+    transition: 0.3s all;
+    border: 2px solid $white;
+    transition: 0.3s all;
+    -webkit-transition: 0.3 all;
+    -moz-transition: 0.3 all;
+    -o-transition: 0.3 all;
+    img,h2{
+        transition: 0.3s all;
+    }
+    &:hover,&:focus{
+        box-shadow: none;
+        border: 2px solid $light;
+        img{
+            box-shadow: none;
+        }
+    }
+}
+
+h2.trans-name{
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.trans-data{
+    transition: 0.7 all;
+    -webkit-transition: 0.7 all;
+    -moz-transition: 0.7 all;
+    -o-transition: 0.7 all;
+}
+.col-9.row{
+    align-items: center;
+}
+.layer {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+
+.checkbox-label{
+    cursor: pointer;
+    transition: 0.3s all;
+    border: 2px solid $white;
+    transition: 0.3s all;
+    -webkit-transition: 0.3 all;
+    -moz-transition: 0.3 all;
+    -o-transition: 0.3 all;
+    &:hover,&:focus,&:active{
+        box-shadow: none;
+        border: 2px solid $light;
+        img{
+            box-shadow: none;
+        }
+    }
+}
+input.translater_input{
+    display: none;
+}
+/* Create a custom checkbox */
+.checkmark-small {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    opacity: 0.2;
+    height: 19px;
+    width: 19px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: .49);
+    background-color: #3B86FF;
+}
+
+.checkbox-trans{
+    position: relative;
+}
+/* When the checkbox is checked, add a blue background */
+.checkbox-label input:checked ~ .checkmark-trans {
+    background: $white;
+    opacity: 1;
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-trans:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.checkbox-label input:checked ~ .checkmark-trans:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.checkbox-label .checkmark-trans:after {
+    right: 12px;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#receive_date,
+#recepion_date
+#subject,
+#language,
+#requesting,
+#pages,
+#code,
+#type,
+#country{
+    transition: 0.6s all;
+}
+.popup{
+    width: 250px;
+    z-index: 4;
+    right: -61px;
+    li{
+        border: 1px solid $light;
+        &:hover{
+            box-shadow: none;
+            transition: 0.4 all;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+#inspection_list,#expert_achiev_list{
+    display: none;
+}
+.upper_button{
+    position: relative;
+    button{
+        border: 1px solid $primary;
+        color: $primary;
+        text-shadow: 0 0 2px $gray-400;
+        &:hover{
+            border-color: $light;
+            box-shadow: none;
+            text-shadow: none;
+        }
+    }
+    a.active,li.active{
+        border-color: $light;
+        box-shadow: none;
+        color: $gray;
+        cursor: none !important;
+    }
+    
+}
